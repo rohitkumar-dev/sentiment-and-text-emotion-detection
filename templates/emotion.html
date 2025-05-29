@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/emotion.css') }}" class="css">
+    <script src="{{ url_for('static', filename='js/emotion.js') }}" type="text/javascript" defer></script>
+</head>
+
+<body>
+    <h1 class="head1">Go With Input & Get Sentiment Predictions</h1>
+    <div class="input-area">
+        <form class="form1 form" action="{{ url_for('emotion_result_page') }}" method="POST">
+            <label for="input_emotion">Enter Text Manually For Quick Analyse</label>
+            <br>
+            <input type="text" name="input_emotion">
+            <br>
+            <button type="submit">Get Predictions</button>
+        </form>
+        <form class="form2 form" action="/">
+            <label for="">Enter HashTag/Keyword To Search For</label>
+            <br>
+            <input type="text" name="">
+            <br>
+            <button type="submit">Get Predictions</button>
+        </form>
+    </div>
+
+
+    <div class="main-mover">
+        <div class="mover">
+            <h1 style="text-align: center">Sentiment Predictions & Analysis</h1>
+            <div class="scroller" data-speed="fast">
+                <ul class="tag-list scroller__inner">
+                    <li>Admiration</li>
+                    <li>Amusement</li>
+                    <li>Anger</li>
+                    <li>Annoyance</li>
+                    <li>Approval</li>
+                    <li>Caring</li>
+                    <li>Confusion</li>
+                    <li>Curiosity</li>
+                    <li>Desire</li>
+                    <li>Disappointment</li>
+                    <li>Disapproval</li>
+                    <li>Disgust</li>
+                    <li>Embarrassment</li>
+                    <li>Excitement</li>
+                    <li>Fear</li>
+                    <li>Gratitude</li>
+                    <li>Grief</li>
+                    <li>Joy</li>
+                    <li>Love</li>
+                    <li>Nervousness</li>
+                    <li>Optimism</li>
+                    <li>Pride</li>
+                    <li>Realization</li>
+                    <li>Relief</li>
+                    <li>Remorse</li>
+                    <li>Sadness</li>
+                    <li>Surprise</li>
+                    <li>Neutral</li>
+                </ul>
+            </div>
+            <div class="scroller" data-direction="right" data-speed="slow">
+                <div class="scroller__inner">
+                    <img src="../static/images/png/1.png" alt="" />
+                    <img src="../static/images/png/2.png" alt="" />
+                    <img src="../static/images/png/3.png" alt="" />
+                    <img src="../static/images/png/4.png" alt="" />
+                    <img src="../static/images/png/5.png" alt="" />
+                    <img src="../static/images/png/6.png" alt="" />
+                    <img src="../static/images/png/7.png" alt="" />
+                    <img src="../static/images/png/8.png" alt="" />
+                    <img src="../static/images/png/9.png" alt="" />
+                    <img src="../static/images/png/10.png" alt="" />
+                    <img src="../static/images/png/11.png" alt="" />
+                    <img src="../static/images/png/12.png" alt="" />
+                    <img src="../static/images/png/13.png" alt="" />
+                    <img src="../static/images/png/14.png" alt="" />
+                    <img src="../static/images/png/15.png" alt="" />
+                    <img src="../static/images/png/16.png" alt="" />
+                    <img src="../static/images/png/17.png" alt="" />
+                    <img src="../static/images/png/18.png" alt="" />
+                    <img src="../static/images/png/19.png" alt="" />
+                    <img src="../static/images/png/20.png" alt="" />
+                    <img src="../static/images/png/21.png" alt="" />
+                    <img src="../static/images/png/22.png" alt="" />
+                    <img src="../static/images/png/23.png" alt="" />
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
